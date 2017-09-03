@@ -1,0 +1,12 @@
+<nav class="navigation" ng-controller="mainContentCtrl">
+    <a href="index.html"><img class="icon" src="img/index/tagencylogo.png" alt="Better Days Travel" style="width:100%; max-width: 455px;"></a>
+    <div class="navigationbar">
+        <ul>
+            <li ng-click="viewClicked('index')"><a href="#!/index" ng-class="{ activenav: activeView.index }">HOME</a></li>
+            <li ng-click="viewClicked('products')"><a href="#!/products" ng-class="{ activenav: activeView.products }">HOLIDAYS (Products)</a></li>
+            <li ng-click="viewClicked('destinations')" ><a href="#" ng-class="{ activenav: activeView.destinations }">DESTINATIONS</a></li>
+            <li ng-click="viewClicked('jobs')"><a href="#!/jobs" ng-class="{ activenav: activeView.jobs }">JOBS</a></li>
+            <li ng-click="viewClicked('sitemap')"><a href="#!/sitemap" ng-class="{ activenav: activeView.sitemap }">SITEMAPs</a></li>
+        </ul>
+    </div>
+</nav>
